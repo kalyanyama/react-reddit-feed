@@ -66,7 +66,7 @@ function App() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto py-6 sm:py-12">
+    <div className="max-w-5xl mx-auto py-6 sm:py-12 px-5">
       <div className="max-w-xl space-y-4 mx-auto">
         <small className="opacity-40 uppercase">Reddit Feed</small>
         <h2 className="text-3xl font-bold tracking-tight pt-2">
@@ -123,16 +123,7 @@ function App() {
           </div>
         ))}
       </div>
-      <footer className="w-full bg-gray-900 text-white py-6 mt-12">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm opacity-70">
-            Powered by Reddit • ReactJS Community Feed
-          </p>
-          <p className="text-sm mt-2 md:mt-0">
-            Built with ❤️ using React & Tailwind CSS
-          </p>
-        </div>
-      </footer>
+
       <div className="text-center mt-8 sm:mt-16">
         <small>
           Build by{" "}
