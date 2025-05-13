@@ -44,9 +44,21 @@ function App() {
     fetchingDetails();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
-  if (errorMessage) return <p>{errorMessage}</p>;
+  if (loading) {
+    return (
+      <div className="min-h-svh w-full grid place-content-center text-center">
+        <p className="font-medium ">Loading...</p>
+      </div>
+    );
+  }
 
+  if (errorMessage) {
+    return (
+      <div className="min-h-svh grid place-content-center">
+        <p>{errorMessage}</p>
+      </div>
+    );
+  }
   const decodeHTML = (html: string) => {
     const txt = document.createElement("textarea");
     txt.innerHTML = html;
