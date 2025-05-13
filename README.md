@@ -1,55 +1,28 @@
-# React + TypeScript + Vite
+# Reddit Feed Viewer - React & Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Reddit Feed Viewer**! This project displays the latest posts from the [ReactJS subreddit](https://www.reddit.com/r/reactjs) in a visually appealing and responsive layout using **React** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: The app is designed to be responsive and looks great on all screen sizes, with a default resolution of 1280x720.
+- **Real-time Reddit Feed**: Fetches and displays the latest posts from the [ReactJS subreddit](https://www.reddit.com/r/reactjs) using Reddit's public API.
+- **Stylish UI**: The interface is designed using **Tailwind CSS** for a clean and modern look.
+- **Interactive Cards**: Each post is displayed in a card with the following details:
+  - **Title**
+  - **SelfText (HTML)**
+  - **URL**
+  - **Score**
+- **Easy to Use**: Clean, simple, and minimalistic UI.
 
-## Expanding the ESLint configuration
+## 📋 Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (for building the user interface)
+- **Tailwind CSS** (for styling)
+- A modern web browser like Chrome, Firefox, or Safari.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# react-reddit-feed
+   ```bash
+   git clone https://github.com/yourusername/reddit-feed-viewer.git
